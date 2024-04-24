@@ -64,6 +64,7 @@ interface WeatherData {
 export default function Home() {
   const { isPending, error, data } = useQuery<WeatherData>({
     queryKey: ['repoData'],
+
     queryFn: async () => {
       const { data } = await axios.get(
         'https://api.openweathermap.org/data/2.5/find?q=agadir&appid=9341fec62fbb53b2c093b49453806797&cnt=2'
