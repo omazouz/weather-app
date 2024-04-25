@@ -6,7 +6,6 @@ import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 import React from 'react';
 
-// `https://api.openweathermap.org/data/2.5/find?q=agadir&appid=9341fec62fbb53b2c093b49453806797&cnt=2`
 interface WeatherDetail {
   dt: number;
   main: {
